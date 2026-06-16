@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom palette matching Kinetic Noir specifications */
+  --color-surface-dim: #131313;
+  --color-surface-bright: #393939;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container: #201f1f;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353534;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #c1c6d7;
+  --color-inverse-surface: #e5e2e1;
+  --color-inverse-on-surface: #313030;
+  --color-outline: #8b90a0;
+  --color-outline-variant: #414755;
+  --color-surface-tint: #adc6ff;
+  --color-primary: #adc6ff;
+  --color-on-primary: #002e69;
+  --color-primary-container: #4b8eff;
+  --color-on-primary-container: #00285c;
+  --color-inverse-primary: #005bc1;
+  --color-secondary: #d7ffc5;
+  --color-on-secondary: #053900;
+  --color-secondary-container: #2ff801;
+  --color-on-secondary-container: #0f6d00;
+  --color-tertiary: #d1bcff;
+  --color-on-tertiary: #3c0090;
+  --color-tertiary-container: #a178ff;
+  --color-on-tertiary-container: #34007f;
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+  --color-primary-fixed: #d8e2ff;
+  --color-primary-fixed-dim: #adc6ff;
+  --color-on-primary-fixed: #001a41;
+  --color-on-primary-fixed-variant: #004493;
+  --color-secondary-fixed: #79ff5b;
+  --color-secondary-fixed-dim: #2ae500;
+  --color-on-secondary-fixed: #022100;
+  --color-on-secondary-fixed-variant: #095300;
+  --color-tertiary-fixed: #e9ddff;
+  --color-tertiary-fixed-dim: #d1bcff;
+  --color-on-tertiary-fixed: #23005b;
+  --color-on-tertiary-fixed-variant: #5700c9;
+  --color-background-dark: #0A0A0A;
+  --color-on-background: #e5e2e1;
+  --color-surface-variant: #353534;
+}
+
+@utility custom-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility active-glow {
+  filter: drop-shadow(0 0 8px rgba(42, 229, 0, 0.4));
+}
+
+@utility active-glow-blue {
+  filter: drop-shadow(0 0 8px rgba(173, 198, 255, 0.4));
+}
+
+@utility active-glow-purple {
+  filter: drop-shadow(0 0 8px rgba(161, 120, 255, 0.4));
+}
+
+@utility glow-green {
+  box-shadow: 0 0 20px rgba(42, 229, 0, 0.15);
+}
+
+@utility glow-blue {
+  box-shadow: 0 0 20px rgba(173, 198, 255, 0.15);
+}
+
+@utility glow-purple {
+  box-shadow: 0 0 20px rgba(161, 120, 255, 0.15);
+}
+
+body {
+  background-color: #0A0A0A;
+  color: #e5e2e1;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
